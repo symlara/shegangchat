@@ -355,6 +355,7 @@ section .form {
   margin-top: 51px;
   border-right: 2px solid var(--primary-color);
   overflow-y: auto;
+  padding-left: 8px;
 }
 
 .user_wrapper {
@@ -1028,6 +1029,13 @@ section .form {
     transition: opacity .15s ease-in;
     color: #ccc;
     }
+  }
+
+  .users_container {
+    margin-top: 51px;
+    border-right: 2px solid var(--primary-color);
+    overflow-y: auto;
+    padding-left: 6px;
   }
 
 }
