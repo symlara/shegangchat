@@ -120,7 +120,7 @@ const Dashboard = () => {
       <div className='messages_container'>
         {chat ? (
           <>
-        <div className='messages_user'>
+        <div className='messages_user text-2xl'>
           <h3 className='text-white'>{chat.name}</h3>
         </div> 
         <div className='messages'>
