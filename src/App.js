@@ -1,3 +1,4 @@
+
 import { BrowserRouter, Switch, Route } from "react-router-dom";
 import Header from "./components/Header";
 import Nav from './components/Nav';
@@ -5,12 +6,18 @@ import Dashboard from './pages/Dashboard';
 import Register from "./pages/Register";
 import FeaturedUpdates from "./components/FeaturedUpdates";
 import FeaturedUpdate2 from "./components/FeaturedUpdate2";
-import Socials from './components/Socials';
+import meetups from './pages/meetups/shegang';
+import updates from './pages/updates/h.e.r-updates';
+import advise from './pages/advise/advise';
+import albums from './pages/albums/albums';
+import videos from './pages/videos/videos';
+import samples from './pages/samples/samples';
+// import Socials from './components/Socials';
+import Footer from './components/Footer';
 import Login from "./pages/Login";
 import Profile from './pages/Profile';
 import AuthProvider, {} from './context/auth';
 import PrivateRoute from "./components/PrivateRoute";
-
 import Carousel from 'react-multi-carousel';
 import 'react-multi-carousel/lib/styles.css';
 
@@ -36,6 +43,7 @@ const responsive = {
 
 function App() {
 
+
   const customleftarrow = (
     <div className="absolute arrow-btn left-0 text-center py-3 cursor-pointer bg-white rounded-full">
       <svg xmlns="http://www.w3.org/2000/svg" className="h-6 w-6 text-black w-full" fill="none" viewBox="0 0 24 24" stroke="currentColor">
@@ -52,19 +60,13 @@ function App() {
     </div>
   );
 
+  
 
   return (
     <AuthProvider>
       <BrowserRouter>
         <Header />
         <Nav />
-        <Switch>
-          <Route exact path="/register" component={Register}  />
-          <Route exact path="/login" component={Login}  />
-          <PrivateRoute exact path="/dashboard" component={Dashboard}  />
-          <PrivateRoute exact path="/profile" component={Profile}  />
-
-        </Switch>
         <div className='mb-8 carousel'>
           <Carousel infinite customleftarrow={customleftarrow} customrightarrow={customrightarrow} responsive={responsive} itemClass="px-4">
             <FeaturedUpdates />
@@ -73,19 +75,25 @@ function App() {
               </div>
           </Carousel>
         </div>
+       &nbsp;
+        <Switch>
+          <Route exact path="/register" component={Register}  />
+          <Route exact path="/login" component={Login}  />
+          <PrivateRoute exact path="/dashboard" component={Dashboard}  />
+          <PrivateRoute exact path="/profile" component={Profile}  />
+          <Route exact path="/meetups/shegang" component={meetups} />
+          <Route exact path="/updates/h.e.r-updates" component={updates} />
+          <Route exact path="/advise/advise" component={advise} />
+          <Route exact path="/albums/albums" component={albums} />
+          <Route exact path="/videos/videos" component={videos} />
+          <Route exact path="/samples/samples" component={samples} />
 
-        <div className='grid grid-cols-1 lg:grid-cols-12 gap-12'>
-          <div className='lg:col-span-8 col-span-1'></div>
-
-          <div>
-            <div className="lg:sticky relative center top-8 ">
-              <Socials />
-            </div>
-          </div>
-
-        </div>
+        </Switch>
+       
     </BrowserRouter>
+      <Footer />
     </AuthProvider>
+    
   );
 }
 

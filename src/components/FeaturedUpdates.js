@@ -4,10 +4,7 @@ import {Link} from 'react-router-dom';
 
 import bg from '../assets/her-returns-to-form-on-her-debut-album-back-of-my-mind.jpg';
 
-{/* <Image 
-src={image01}
-alt="back of my mind"
-/> */}
+
 
 
 const FeaturedUpdates = () => (
