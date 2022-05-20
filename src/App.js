@@ -80,7 +80,7 @@ function App() {
         <Switch>
           <Route exact path="/register" component={Register}  />
           <Route exact path="/login" component={Login}  />
-          <PrivateRoute exact path="/dashboard" component={Dashboard}  />
+          <PrivateRoute exact path="/chat" component={Dashboard}  />
           <PrivateRoute exact path="/profile" component={Profile}  />
           <Route exact path="/meetups/shegang" component={meetups} />
           <Route exact path="/updates/h.e.r-updates" component={updates} />

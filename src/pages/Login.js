@@ -55,7 +55,7 @@ const Login = () => {
   return (
     <section>
         <form className='login-card' onSubmit={handleSubmit}>
-        <h3 className='text-white text-center'>Log into your account</h3>
+        <h3 id="login" className='text-white text-center'>Log into your account</h3>
 
             <div className='input-container'>
                 <label htmlFor="email">Email</label>

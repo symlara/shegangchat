@@ -27,7 +27,7 @@ const Header = () => {
       <nav>
           <h3>
             <Link className='pr-3 font-bold text-2xl' to="/">SheGang</Link>
-              <Link to="/dashboard">Dashboard</Link>
+              <Link to="/chat">Chat</Link>
           </h3>
           <div>
               {user ? (
