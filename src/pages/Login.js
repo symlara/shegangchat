@@ -1,13 +1,15 @@
 import React, { useState } from 'react'
-import { signInWithEmailAndPassword } from "firebase/auth";
+import { signInWithEmailAndPassword  } from "firebase/auth";
 import { auth, db } from '../firebase';
 import { doc, updateDoc } from 'firebase/firestore';
+import {Link} from 'react-router-dom';
 
 import { useHistory } from 'react-router-dom';
 
 
 
 const Login = () => {
+
     const [data, setData ] = useState({
         email: '',
         password: '',
@@ -69,7 +71,11 @@ const Login = () => {
             <div className="btn_container">
                 <button className="btn text-white" disabled={loading}>{loading ? 'Logging in ...' : 'Login'}</button>
             </div>
-            
+            {/* <div className="btn_container">
+                <button className="btn text-white">
+                    <Link to="/forgot-password">Forgot password?</Link>
+                    </button>
+            </div> */}
         </form>
     </section>
   )

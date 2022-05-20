@@ -523,10 +523,10 @@ section .form {
   margin-bottom: -50px;
 }
 
-.footer, .push {
-  margin-top: 500px;
-  height: 50px;
-}
+// .footer, .push {
+//   margin-top: 500px;
+//   height: 50px;
+// }
 
 /* album page styles */
 #streaming a {
@@ -663,7 +663,7 @@ section .form {
   opacity: 0.6;
 }
 
-.app__meetups__blog-container_article-content{
+.app__meetups__blog-container_article-content {
   display: flex;
   flex-direction: column;
   justify-content: space-between;
@@ -770,7 +770,7 @@ section .form {
 
 
 
-.app__updates__blog-container_article-content{
+.app__updates__blog-container_article-content {
   display: flex;
   flex-direction: column;
   justify-content: space-between;
@@ -778,7 +778,7 @@ section .form {
   height: 50%;
 }
 
-.app__updates__blog-container_article-content p{
+.app__updates__blog-container_article-content p {
   font-family: var(--font-family);
   font-weight: 700;
   font-size: 14px;
@@ -794,7 +794,7 @@ section .form {
   color: #FFFFFF;
 }
 
-.app__updates__blog-container_article-content h3{
+.app__updates__blog-container_article-content h3 {
   font-family: var(--font-family);
   font-weight: 800;
   font-size: 25.11px;
@@ -837,7 +837,7 @@ section .form {
 
 /* samples page */
 #sample a {
-  font-size: 15px;
+  font-size: 14px !important;
   font-weight: 300;
   padding: 2;
   margin: 0 auto;
@@ -1018,7 +1018,7 @@ section .form {
 
 /* samples page */
   #sample a {
-    font-size: 12px;
+    font-size: 12px !important;
     font-weight: 300;
     padding: 2;
     margin: 0 auto;

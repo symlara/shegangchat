@@ -12,6 +12,7 @@ import advise from './pages/advise/advise';
 import albums from './pages/albums/albums';
 import videos from './pages/videos/videos';
 import samples from './pages/samples/samples';
+// import forgotpassword from './pages/ForgotPasswordPage';
 // import Socials from './components/Socials';
 import Footer from './components/Footer';
 import Login from "./pages/Login";
@@ -87,7 +88,7 @@ function App() {
           <Route exact path="/albums/albums" component={albums} />
           <Route exact path="/videos/videos" component={videos} />
           <Route exact path="/samples/samples" component={samples} />
-
+          {/* <Route exact path="/forgot-password" component={forgotpassword} /> */}
         </Switch>
        
     </BrowserRouter>

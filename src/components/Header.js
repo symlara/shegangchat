@@ -11,6 +11,8 @@ import { useHistory } from 'react-router-dom'
 const Header = () => {
   const history = useHistory();
   const { user } = useContext(AuthContext);
+
+  
   const handleSignout = async () => {
     await updateDoc(doc(db, 'users', auth.currentUser.uid), {
       isOnline: false,

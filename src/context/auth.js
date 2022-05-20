@@ -1,13 +1,16 @@
-import { createContext, useEffect, useState } from 'react';
-import { onAuthStateChanged } from 'firebase/auth';
+import { createContext, useEffect, useState, useContext } from 'react';
+import { onAuthStateChanged, sendPasswordResetEmail, } from 'firebase/auth';
 import { auth } from '../firebase';
 import Loading from '../components/Loading';
 
-export const AuthContext = createContext()
+export const AuthContext = createContext({
+    forgotPassword: () => Promise
+})
+
+export const useAuth = () => useContext(AuthContext)
 
 
-
-const AuthProvider = ({ children }) => {
+export default function AuthContextProvider  ({ children })  {
     const [user, setUser] = useState(null);
     const [loading, setLoading] = useState(true);
 
@@ -22,12 +25,21 @@ const AuthProvider = ({ children }) => {
         return <Loading />;
     }
 
+    function forgotPassword(email) {
+        return sendPasswordResetEmail(auth, email, {
+          url: `http://localhost:3000/login`,
+        })
+      }
+
+  const value = {
+      forgotPassword
+  }
+
 
     return (
-    <AuthContext.Provider value={{ user }}>
+    <AuthContext.Provider value={{ user, value }}>
         { children }
     </AuthContext.Provider>
     )
 }
 
-export default AuthProvider;
