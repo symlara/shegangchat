@@ -31,7 +31,7 @@ const HERUpdates = () => {
           &nbsp;
             <div className='app__updates__blog-container_article'>
                 <div className='app__updates__blog-container_article-content'>
-                <Link href="https://www.her-official.com/#tour" rel="noopener"><h3>BOMM Tour Schedule</h3></Link>
+                <Link to="https://www.her-official.com/#tour" rel="noopener"><h3>BOMM Tour Schedule</h3></Link>
                 </div>
             </div>
           </div>
@@ -39,43 +39,43 @@ const HERUpdates = () => {
           <div className='app__updates__blog-container_groupB'>
             <div className='app__updates__blog-container_article'>
                 <div className='app__updates__blog-container_article-content'>
-                    <Link href="https://www.coldplay.com/tour/" target="_blank" rel="noopener"><h3>World Tour w/ Coldplay</h3></Link>
+                    <Link to="https://www.coldplay.com/tour/" target="_blank" rel="noopener"><h3>World Tour w/ Coldplay</h3></Link>
                 </div>
             </div>
            
             <div className='app__updates__blog-container_article'>
                 <div className='app__updates__blog-container_article-content'>
-                    <Link href="#"><h3>Appearances</h3></Link>
+                    <Link to="#"><h3>Appearances</h3></Link>
                 </div>
             </div>
           
             <div className='app__updates__blog-container_article'>
                 <div className='app__updates__blog-container_article-content'>
-                    <Link href="#"><h3>Interviews</h3></Link>
+                    <Link to="#"><h3>Interviews</h3></Link>
                 </div>
             </div>
            
             <div className='app__updates__blog-container_article'>
                 <div className='app__updates__blog-container_article-content'>
-                    <Link href="https://www.instagram.com/lightsonfest/?hl=en"  rel="noopener"><h3>Festivals</h3></Link>
+                    <Link to="https://www.instagram.com/lightsonfest/?hl=en"  rel="noopener"><h3>Festivals</h3></Link>
                 </div>
             </div>
            
             <div className='app__updates__blog-container_article'>
                 <div className='app__updates__blog-container_article-content'>
-                    <Link href="#"  rel="noopener"><h3>Collaborations</h3></Link>
+                    <Link to="#"  rel="noopener"><h3>Collaborations</h3></Link>
                 </div>
             </div>
           
             <div className='app__updates__blog-container_article'>
                 <div className='app__updates__blog-container_article-content'>
-                    <Link href="#"  rel="noopener"><h3>Projects</h3></Link>
+                    <Link to="#"  rel="noopener"><h3>Projects</h3></Link>
                 </div>
             </div>
             
             <div className='app__updates__blog-container_article'>
                 <div className='app__updates__blog-container_article-content'>
-                    <Link href="https://www.hollywoodreporter.com/movies/movie-news/h-e-r-to-make-acting-debut-in-the-color-purple-movie-musical-exclusive-1235004336/" rel="noopener"><h3>Acting Gigs</h3></Link>
+                    <Link to="https://www.hollywoodreporter.com/movies/movie-news/h-e-r-to-make-acting-debut-in-the-color-purple-movie-musical-exclusive-1235004336/" rel="noopener"><h3>Acting Gigs</h3></Link>
                 </div>
             </div>
           </div>

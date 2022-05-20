@@ -26,7 +26,7 @@ const Meetups = () => {
                     &nbsp;
                     <div className='app__meetups__blog-container_article'>
                         <div className='app__meetups__blog-container_article-content'>
-                            <Link href="http://lightsonfest.com/" target="_blank"><h3>Lights On Fest</h3></Link>
+                            <Link to="http://lightsonfest.com/" target="_blank"><h3>Lights On Fest</h3></Link>
                         </div>
                     </div>
                 </div>
@@ -34,25 +34,25 @@ const Meetups = () => {
                 <div className='app__meetups__blog-container_groupB'>
                     <div className='app__meetups__blog-container_article'>
                         <div className='app__meetups__blog-container_article-content'>
-                            <Link href="https://www.her-official.com/#tour" target="_blank" rel="noopener"><h3>Tour Meet Ups</h3></Link>
+                            <Link to="https://www.her-official.com/#tour" target="_blank" rel="noopener"><h3>Tour Meet Ups</h3></Link>
                         </div>
                     </div>
 
                     <div className='app__meetups__blog-container_article'>
                         <div className='app__meetups__blog-container_article-content'>
-                            <Link href="#"><h3>Traveling</h3></Link>
+                            <Link to="#"><h3>Traveling</h3></Link>
                         </div>
                     </div>
 
                     <div className='app__meetups__blog-container_article'>
                         <div className='app__meetups__blog-container_article-content'>
-                            <Link href="#"><h3>Adventures</h3></Link>
+                            <Link to="#"><h3>Adventures</h3></Link>
                         </div>
                     </div>
 
                     <div className='app__meetups__blog-container_article'>
                         <div className='app__meetups__blog-container_article-content'>
-                            <Link href="#"><h3>Connections for professional and casual reasons</h3></Link>
+                            <Link to="#"><h3>Connections for professional and casual reasons</h3></Link>
                         </div>
                     </div>
 
