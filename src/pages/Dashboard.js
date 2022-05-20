@@ -64,7 +64,7 @@ const Dashboard = () => {
     }
   };
 
-  console.log(msgs);
+
 
   const handleSubmit = async (e) => {
     e.preventDefault();
