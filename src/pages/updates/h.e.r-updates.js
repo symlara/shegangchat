@@ -1,4 +1,3 @@
-import { Link }from 'react-router-dom';
 // import moment from 'moment';
 // import Update from '../../components/update/Update';
 
@@ -31,7 +30,7 @@ const HERUpdates = () => {
           &nbsp;
             <div className='app__updates__blog-container_article'>
                 <div className='app__updates__blog-container_article-content'>
-                <Link to="https://www.her-official.com/#tour" rel="noopener"><h3>BOMM Tour Schedule</h3></Link>
+                <a href="https://www.her-official.com/#tour" target="_blank" rel="noopener noreferrer"><h3>BOMM Tour Schedule</h3></a>
                 </div>
             </div>
           </div>
@@ -39,43 +38,43 @@ const HERUpdates = () => {
           <div className='app__updates__blog-container_groupB'>
             <div className='app__updates__blog-container_article'>
                 <div className='app__updates__blog-container_article-content'>
-                    <Link to="https://www.coldplay.com/tour/" target="_blank" rel="noopener"><h3>World Tour w/ Coldplay</h3></Link>
+                    <a href="https://www.coldplay.com/tour/" target="_blank" rel="noopener noreferrer"><h3>World Tour w/ Coldplay</h3></a>
                 </div>
             </div>
            
             <div className='app__updates__blog-container_article'>
                 <div className='app__updates__blog-container_article-content'>
-                    <Link to="#"><h3>Appearances</h3></Link>
+                    <a href="#/"><h3>Appearances</h3></a>
                 </div>
             </div>
           
             <div className='app__updates__blog-container_article'>
                 <div className='app__updates__blog-container_article-content'>
-                    <Link to="#"><h3>Interviews</h3></Link>
+                    <a href="#/"><h3>Interviews</h3></a>
                 </div>
             </div>
            
             <div className='app__updates__blog-container_article'>
                 <div className='app__updates__blog-container_article-content'>
-                    <Link to="https://www.instagram.com/lightsonfest/?hl=en"  rel="noopener"><h3>Festivals</h3></Link>
+                    <a href="http://lightsonfest.com/"  target="_blank" rel="noopener noreferrer"><h3>Festivals</h3></a>
                 </div>
             </div>
            
             <div className='app__updates__blog-container_article'>
                 <div className='app__updates__blog-container_article-content'>
-                    <Link to="#"  rel="noopener"><h3>Collaborations</h3></Link>
+                    <a href="#/"  rel="noopener"><h3>Collaborations</h3></a>
                 </div>
             </div>
           
             <div className='app__updates__blog-container_article'>
                 <div className='app__updates__blog-container_article-content'>
-                    <Link to="#"  rel="noopener"><h3>Projects</h3></Link>
+                    <a href="#/"  rel="noopener"><h3>Projects</h3></a>
                 </div>
             </div>
             
             <div className='app__updates__blog-container_article'>
                 <div className='app__updates__blog-container_article-content'>
-                    <Link to="https://www.hollywoodreporter.com/movies/movie-news/h-e-r-to-make-acting-debut-in-the-color-purple-movie-musical-exclusive-1235004336/" rel="noopener"><h3>Acting Gigs</h3></Link>
+                    <a href="https://www.hollywoodreporter.com/movies/movie-news/h-e-r-to-make-acting-debut-in-the-color-purple-movie-musical-exclusive-1235004336/" target="_blank" rel="noopener noreferrer"><h3>Acting Gigs</h3></a>
                 </div>
             </div>
           </div>
@@ -100,7 +99,7 @@ const HERUpdates = () => {
                     <path strokeLinecap="round" strokeLinejoin="round" strokeWidth="2" d="M14 5l7 7m0 0l-7 7m7-7H3" />
                     </svg>
                 </div>
-                </Link>
+                </a>
             </div>
         </div> */}
      </div>

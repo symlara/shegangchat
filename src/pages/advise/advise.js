@@ -1,4 +1,4 @@
-import {Link} from 'react-router-dom';
+// import {Link} from 'react-router-dom';
 // import Update from '../../components/update/Update';
 
 // import image01 from '../../assets/her-returns-to-form-on-her-debut-album-back-of-my-mind.jpg';
@@ -27,7 +27,7 @@ const Advise = () => {
           <div className='app__updates__blog-container_groupA'>
             <div className='app__updates__blog-container_article'>
                 <div className='app__updates__blog-container_article-content'>
-                <Link to="https://www.her-official.com/#tour" rel="noopener"><h3>Advice</h3></Link>
+                <a href="#/" rel="noopener noreferrer"><h3>Advice</h3></a>
                 </div>
             </div>
           </div>
@@ -35,25 +35,25 @@ const Advise = () => {
             <div className='app__updates__blog-container_article'>
                 <div className='app__updates__blog-container_article-content'>
                 
-                    <Link to="https://www.coldplay.com/tour/" rel="noopener"><h3>Guidance</h3></Link>
+                    <a href="#/" rel="noopener noreferrer"><h3>Guidance</h3></a>
                 </div>
             </div>
 
             <div className='app__updates__blog-container_article'>
                 <div className='app__updates__blog-container_article-content'>
-                    <Link to="#"><h3>Resources</h3></Link>
+                    <a href="#/"><h3>Resources</h3></a>
                 </div>
             </div>
 
             <div className='app__updates__blog-container_article'>
                 <div className='app__updates__blog-container_article-content'>
-                    <Link to="#"><h3>Internship opportunities</h3></Link>
+                    <a href="#/"><h3>Internship opportunities</h3></a>
                 </div>
             </div>
 
             <div className='app__updates__blog-container_article'>
                 <div className='app__updates__blog-container_article-content'>
-                    <Link to="#"  rel="noopener"><h3>Educational advice</h3></Link>
+                    <a href="#/" rel="noopener noreferrer"><h3>Educational advice</h3></a>
                 </div>
             </div>
           </div>

@@ -1,4 +1,4 @@
-import {Link }from 'react-router-dom';
+// import {Link }from 'react-router-dom';
 import 'react-multi-carousel/lib/styles.css';
 // import image01 from '../../assets/Back_Of_My_Mind_By_H.E.R.png';
 import image02 from '../../assets/shegang.png';
@@ -26,7 +26,7 @@ const Meetups = () => {
                     &nbsp;
                     <div className='app__meetups__blog-container_article'>
                         <div className='app__meetups__blog-container_article-content'>
-                            <Link to="http://lightsonfest.com/" target="_blank"><h3>Lights On Fest</h3></Link>
+                            <a href="http://lightsonfest.com/" target="_blank" rel="noopener noreferrer"><h3>Lights On Fest</h3></a>
                         </div>
                     </div>
                 </div>
@@ -34,25 +34,25 @@ const Meetups = () => {
                 <div className='app__meetups__blog-container_groupB'>
                     <div className='app__meetups__blog-container_article'>
                         <div className='app__meetups__blog-container_article-content'>
-                            <Link to="https://www.her-official.com/#tour" target="_blank" rel="noopener"><h3>Tour Meet Ups</h3></Link>
+                            <a href="https://www.her-official.com/#tour" target="_blank" rel="noopener noreferrer"><h3>Tour Meet Ups</h3></a>
                         </div>
                     </div>
 
                     <div className='app__meetups__blog-container_article'>
                         <div className='app__meetups__blog-container_article-content'>
-                            <Link to="#"><h3>Traveling</h3></Link>
+                            <a href="#/"><h3>Traveling</h3></a>
                         </div>
                     </div>
 
                     <div className='app__meetups__blog-container_article'>
                         <div className='app__meetups__blog-container_article-content'>
-                            <Link to="#"><h3>Adventures</h3></Link>
+                            <a href="#/"><h3>Adventures</h3></a>
                         </div>
                     </div>
 
                     <div className='app__meetups__blog-container_article'>
                         <div className='app__meetups__blog-container_article-content'>
-                            <Link to="#"><h3>Connections for professional and casual reasons</h3></Link>
+                            <a href="#/"><h3>Connections for professional and casual reasons</h3></a>
                         </div>
                     </div>
 
@@ -78,7 +78,7 @@ const Meetups = () => {
                     <path strokeLinecap="round" strokeLinejoin="round" strokeWidth="2" d="M14 5l7 7m0 0l-7 7m7-7H3" />
                     </svg>
                 </div>
-                </Link>
+                </a>
             </div>
         </div> */}
     </div>
