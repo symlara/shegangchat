@@ -2,7 +2,6 @@ import React, { useState } from 'react'
 import { signInWithEmailAndPassword  } from "firebase/auth";
 import { auth, db } from '../firebase';
 import { doc, updateDoc } from 'firebase/firestore';
-import {Link} from 'react-router-dom';
 
 import { useHistory } from 'react-router-dom';
 
