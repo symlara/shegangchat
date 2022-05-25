@@ -42,4 +42,3 @@ export default function AuthContextProvider  ({ children })  {
     </AuthContext.Provider>
     )
 }
-
