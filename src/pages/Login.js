@@ -2,12 +2,19 @@ import React, { useState } from 'react'
 import { signInWithEmailAndPassword  } from "firebase/auth";
 import { auth, db } from '../firebase';
 import { doc, updateDoc } from 'firebase/firestore';
+import { Link } from 'react-router-dom';
+import { FaGoogle } from 'react-icons/fa';
+import { useAuth } from '../context/AuthContext';
+
+
+import { useSignInWithGoogle } from "react-firebase-hooks/auth";
 
 import { useHistory } from 'react-router-dom';
 
 
-
 const Login = () => {
+
+    const [signInWithGoogle, user]= useSignInWithGoogle(auth);
 
     const [data, setData ] = useState({
         email: '',
@@ -24,6 +31,7 @@ const Login = () => {
         setData({...data, [e.target.name]: e.target.value });
     };
 
+    
 
     const handleSubmit = async (e) => {
         e.preventDefault();
@@ -70,11 +78,17 @@ const Login = () => {
             <div className="btn_container">
                 <button className="btn text-white" disabled={loading}>{loading ? 'Logging in ...' : 'Login'}</button>
             </div>
-            {/* <div className="btn_container">
-                <button className="btn text-white">
-                    <Link to="/forgot-password">Forgot password?</Link>
-                    </button>
+            {/* <div className='btn_container'>
+                <button className='btn text-white' onClick={() => signInWithGoogle("", {prompt: "select_account"})}>Sign in with Google</button>
             </div> */}
+            {/* <div className='btn_container'>
+            <button className='btn text-white'>
+               <Link to="/forgot-password">Forgot password?</Link> 
+            </button>
+
+            </div> */}
+            <hr/>
+            
         </form>
     </section>
   )
