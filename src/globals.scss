@@ -972,10 +972,10 @@ section .form {
     font-size: 15px;
     display: grid;
     padding: 5px;
+}
 
-    h2 {
-      font-size: 25px !important;
-    }
+#streaming h2 {
+  font-size: 18px !important;
 }
 /* video styles on mobile */
 .video-container {

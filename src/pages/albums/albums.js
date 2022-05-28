@@ -8,7 +8,7 @@ export default function Album() {
     <div>
       
       <section className="ph3 tc text-sm" id="streaming">
-        <h2 className='text-white'>Stream the new album below</h2>
+        <h2 className='text-white text-xl'>Stream the new album below</h2>
         <a className="link white-60 bg-transparent hover-white inline-flex items-center ma2 tc pa4" href="https://music.apple.com/us/artist/h-e-r/123049323" target="_blank" rel="noreferrer"> → Apple Music</a>
         <a className="link white-60 bg-transparent hover-white inline-flex items-center ma2 tc pa4" href="https://open.spotify.com/artist/3Y7RZ31TRPVadSFVy1o8os" target="_blank" rel="noreferrer"> → Spotify</a>
         <a className="link white-60 bg-transparent hover-white inline-flex items-center ma2 tc pa4" href="https://music.apple.com/us/album/back-of-my-mind-apple-music-edition/1571344275?ls=1&app=itunes&at=1l3vpUI&ct=g5nqhe%7Cher-official.com" target="_blank" rel="noreferrer"> → iTunes</a>
