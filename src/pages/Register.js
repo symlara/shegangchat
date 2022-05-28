@@ -2,12 +2,17 @@ import React, { useState } from 'react'
 import { createUserWithEmailAndPassword } from "firebase/auth";
 import { auth, db } from '../firebase';
 import { setDoc, doc, Timestamp } from 'firebase/firestore';
+import { FaGoogle } from 'react-icons/fa';
+
 
 import { useHistory } from 'react-router-dom';
 
+import { useSignInWithGoogle } from "react-firebase-hooks/auth";
 
 
 const Register = () => {
+    const [signInWithGoogle] = useSignInWithGoogle(auth);
+
     const [data, setData ] = useState({
         name: '',
         email: '',
@@ -79,7 +84,11 @@ const Register = () => {
             <div className="btn_container">
                 <button className="btn text-white" disabled={loading}>{loading ? 'Creating ...' : 'Register'}</button>
             </div>
-            
+            <hr />
+            <p className='text-white text-center'>OR</p>
+            <div className='btn_container'>
+            <button className='btn text-white' onClick={() => signInWithGoogle("", {prompt: "select_account"})}><FaGoogle className='center' />Sign in with Google</button>
+            </div>
         </form>
     </section>
   )

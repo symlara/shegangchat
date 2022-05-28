@@ -52,7 +52,7 @@ const Meetups = () => {
 
                     <div className='app__meetups__blog-container_article'>
                         <div className='app__meetups__blog-container_article-content'>
-                            <a href="#/"><h3>Connections for professional and casual reasons</h3></a>
+                            <a href="#/"><h3>Connections for professional and networking purposes</h3></a>
                         </div>
                     </div>
 

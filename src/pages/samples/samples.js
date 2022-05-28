@@ -7,14 +7,14 @@ export default function Samples() {
         <div className="samples">
 
             { 
-              data && data.map( data => {
+              data && data.map((data, index) => {
                 return (
-                    <div key={ data.id }>
+                    <div key={ data }>
 
                       { data.readable ? (
 
 
-                          <div key={data} className="lh-copy fl tc p-5" id="sample">
+                          <div className="lh-copy fl tc p-5" id="sample">
 
                             <a href={ data.preview }>{ data.title }</a>
                           </div>

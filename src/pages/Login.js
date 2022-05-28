@@ -1,10 +1,9 @@
 import React, { useState } from 'react'
-import { signInWithEmailAndPassword  } from "firebase/auth";
+import { signInWithEmailAndPassword } from "firebase/auth";
 import { auth, db } from '../firebase';
 import { doc, updateDoc } from 'firebase/firestore';
-import { Link } from 'react-router-dom';
 import { FaGoogle } from 'react-icons/fa';
-import { useAuth } from '../context/AuthContext';
+
 
 
 import { useSignInWithGoogle } from "react-firebase-hooks/auth";
@@ -13,15 +12,20 @@ import { useHistory } from 'react-router-dom';
 
 
 const Login = () => {
+    const [signInWithGoogle] = useSignInWithGoogle(auth);
 
-    const [signInWithGoogle, user]= useSignInWithGoogle(auth);
-
+   
+    
+    
     const [data, setData ] = useState({
         email: '',
         password: '',
         error: null,
         loading: false,
     });
+
+ 
+
 
     const history = useHistory();
 
@@ -54,11 +58,13 @@ const Login = () => {
                 error: null, 
                 loading: false
             });
-            history.replace('/');
+            history.replace('/profile');
         } catch(err) {
             setData({ ...data, error: err.message, loading: false });
         }
     }
+
+  
 
   return (
     <section>
@@ -74,21 +80,22 @@ const Login = () => {
                 <label htmlFor="password">Password</label>
                 <input type="password" name="password" value={password} onChange={handleChange} />
             </div>
-            {error ? <p className='error'>{error}</p>:null}
+            {/* {error ? <p className='error'>{error}</p>:null} */}
             <div className="btn_container">
                 <button className="btn text-white" disabled={loading}>{loading ? 'Logging in ...' : 'Login'}</button>
             </div>
-            {/* <div className='btn_container'>
-                <button className='btn text-white' onClick={() => signInWithGoogle("", {prompt: "select_account"})}>Sign in with Google</button>
-            </div> */}
-            {/* <div className='btn_container'>
-            <button className='btn text-white'>
-               <Link to="/forgot-password">Forgot password?</Link> 
-            </button>
-
-            </div> */}
+          
             <hr/>
-            
+            <p className='text-white text-center'>OR</p>
+            <div className='btn_container'>
+               
+            <button 
+            className='btn text-white' 
+            onClick={() => signInWithGoogle("", {prompt: "select_account"}).then(() =>{
+                history.push('/profile')
+            })
+            }><FaGoogle className='center' />Sign in with Google</button>
+            </div>
         </form>
     </section>
   )

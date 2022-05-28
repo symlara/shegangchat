@@ -13,7 +13,6 @@ import {
 import { auth } from "../firebase";
 
 
-
 const AuthContext = createContext({})
 
 
@@ -24,6 +23,8 @@ export const useAuth = () => useContext(AuthContext)
 // };
 
 export default function AuthContextProvider({children}) {
+
+
   const [currentUser, setCurrentUser] = useState(null);
 
   useEffect(() => {
@@ -46,10 +47,9 @@ export default function AuthContextProvider({children}) {
       return signInWithEmailAndPassword(auth, email, password)
   }
 
-  function signInWithGoogle() {
+  function signInWithGoogle  ()  {
     const provider = new GoogleAuthProvider()
-        return signInWithPopup(auth, provider)
-    
+    return signInWithPopup(auth, provider)
 }
 
   function forgotPassword(email) {
