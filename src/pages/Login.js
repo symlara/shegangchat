@@ -87,7 +87,7 @@ const Login = () => {
             </div>
           
             <hr/>
-            <p className='text-white text-center'>OR</p>
+            {/* <p className='text-white text-center'>OR</p> */}
            
                
             {/* <div 

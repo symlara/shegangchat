@@ -88,15 +88,13 @@ const Register = () => {
                 </button>
             </div>
             <hr />
-            <p className='text-white text-center'>OR</p>
-            <div className='btn_container'>
-            <div>
+            {/* <p className='text-white text-center'>OR</p> */}
+            {/* <div>
                 <GoogleButton 
                 onClick={() => 
                 signInWithGoogle("", {prompt: "select_account"}).then(() =>{
                 history.push('/profile')})} />
-            </div>
-            </div>
+            </div> */}
         </form>
     </section>
   )
