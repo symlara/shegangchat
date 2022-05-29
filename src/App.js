@@ -16,7 +16,7 @@ import samples from './pages/samples/samples';
 import Footer from './components/Footer';
 import Login from "./pages/Login";
 import Profile from './pages/Profile';
-import ForgotPassword from "./pages/Forgotpassword";
+// import ForgotPassword from "./pages/Forgotpassword";
 import AuthProvider, {} from './context/auth';
 import PrivateRoute from "./components/PrivateRoute";
 import Carousel from 'react-multi-carousel';
@@ -82,7 +82,7 @@ function App() {
           <Route exact path="/login" component={Login}  />
           <PrivateRoute exact path="/chat" component={Dashboard}  />
           <PrivateRoute exact path="/profile" component={Profile}  />
-          <Route exact path="/forgot-password" component={ForgotPassword}  />
+          {/* <Route exact path="/forgot-password" component={ForgotPassword}  /> */}
           <Route exact path="/meetups/shegang" component={meetups} />
           <Route exact path="/updates/h.e.r-updates" component={updates} />
           <Route exact path="/advise/advise" component={advise} />

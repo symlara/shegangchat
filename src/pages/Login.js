@@ -2,8 +2,9 @@ import React, { useState } from 'react'
 import { signInWithEmailAndPassword } from "firebase/auth";
 import { auth, db } from '../firebase';
 import { doc, updateDoc } from 'firebase/firestore';
-import { FaGoogle } from 'react-icons/fa';
+// import { FaGoogle } from 'react-icons/fa';
 
+import { GoogleButton } from 'react-google-button';
 
 
 import { useSignInWithGoogle } from "react-firebase-hooks/auth";
@@ -87,14 +88,14 @@ const Login = () => {
           
             <hr/>
             <p className='text-white text-center'>OR</p>
-            <div className='btn_container'>
+           
                
-            <button 
+            <div 
             className='btn text-white' 
-            onClick={() => signInWithGoogle("", {prompt: "select_account"}).then(() =>{
-                history.push('/profile')
-            })
-            }><FaGoogle className='center' />Sign in with Google</button>
+           ><GoogleButton  
+           className="google-button"
+           onClick={() => signInWithGoogle("", {prompt: "select_account"}).then(() =>{
+            history.push('/profile')})} />
             </div>
         </form>
     </section>

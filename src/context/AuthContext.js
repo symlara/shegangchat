@@ -6,8 +6,11 @@ import {
   signOut,
   GoogleAuthProvider, 
   signInWithPopup,
+  signInWithRedirect,
   sendPasswordResetEmail,
-  confirmPasswordReset
+  confirmPasswordReset,
+  getAuth,
+  getRedirectResult
 } from 'firebase/auth';
 
 import { auth } from "../firebase";
@@ -50,6 +53,7 @@ export default function AuthContextProvider({children}) {
   function signInWithGoogle  ()  {
     const provider = new GoogleAuthProvider()
     return signInWithPopup(auth, provider)
+    
 }
 
   function forgotPassword(email) {
