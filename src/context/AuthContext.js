@@ -43,14 +43,16 @@ export default function AuthContextProvider({children}) {
   
 
   function register(email, password) {
-      return createUserWithEmailAndPassword(auth, email, password)
+    const provider = new GoogleAuthProvider();
+      return createUserWithEmailAndPassword(auth, email, password, provider)
   }
 
   function login(email, password) {
-      return signInWithEmailAndPassword(auth, email, password)
+    const provider = new GoogleAuthProvider();
+      return signInWithEmailAndPassword(auth, email, password, provider)
   }
 
-  function signInWithGoogle  ()  {
+  function signInWithGoogle()  {
     const provider = new GoogleAuthProvider()
     return signInWithPopup(auth, provider)
     

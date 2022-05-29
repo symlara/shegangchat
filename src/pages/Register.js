@@ -2,7 +2,7 @@ import React, { useState } from 'react'
 import { createUserWithEmailAndPassword } from "firebase/auth";
 import { auth, db } from '../firebase';
 import { setDoc, doc, Timestamp } from 'firebase/firestore';
-import { FaGoogle } from 'react-icons/fa';
+import { GoogleButton } from 'react-google-button';
 
 
 import { useHistory } from 'react-router-dom';
@@ -56,7 +56,7 @@ const Register = () => {
                 error: null, 
                 loading: false
             });
-            history.replace('/');
+            history.replace('/profile');
         } catch(err) {
             setData({ ...data, error: err.message, loading: false });
         }
@@ -82,12 +82,20 @@ const Register = () => {
             </div>
             {error ? <p className='error'>{error}</p>:null}
             <div className="btn_container">
-                <button className="btn text-white" disabled={loading}>{loading ? 'Creating ...' : 'Register'}</button>
+                <button
+                className="btn text-white" 
+                disabled={loading}>{loading ? 'Creating ...' : 'Register'}
+                </button>
             </div>
             <hr />
             <p className='text-white text-center'>OR</p>
             <div className='btn_container'>
-            <button className='btn text-white' onClick={() => signInWithGoogle("", {prompt: "select_account"})}><FaGoogle className='center' />Sign in with Google</button>
+            <div>
+                <GoogleButton 
+                onClick={() => 
+                signInWithGoogle("", {prompt: "select_account"}).then(() =>{
+                history.push('/profile')})} />
+            </div>
             </div>
         </form>
     </section>
