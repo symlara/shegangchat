@@ -63,6 +63,9 @@ const HERUpdates = () => {
             <div className='app__updates__blog-container_article'>
                 <div className='app__updates__blog-container_article-content'>
                     <a href="#/"  rel="noopener"><h3>Collaborations</h3></a>
+                    <ul>
+                        <a href="https://news.nationwide.com/her-featured-in-new-nationwide-commercial/" target="_blank" rel="noopener noreferrer"><li className='text-white text-xl'>Nationwide</li></a>
+                    </ul>
                 </div>
             </div>
           

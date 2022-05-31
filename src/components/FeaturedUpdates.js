@@ -17,7 +17,7 @@ const FeaturedUpdates = () => (
             <p className="text-white mb-4 text-shadow font-bold text-xl text-center">H.E.R Updates</p>
             <div className="flex items-center absolute bottom-5 w-full justify-center">
             <img
-                unoptimized
+                unoptimized="true"
                 alt="back of my mind"
                 height="30px"
                 width="30px"

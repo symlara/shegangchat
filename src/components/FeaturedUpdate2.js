@@ -21,7 +21,7 @@ const FeaturedUpdate2 = () => (
             <p className="text-white mb-4 text-shadow font-bold text-xl text-center">SheGang Meetups</p>
             <div className="flex items-center absolute bottom-5 w-full justify-center">
             <img
-                unoptimized
+                unoptimized="true"
                 alt="back of my mind"
                 height="30px"
                 width="30px"

@@ -60,6 +60,7 @@ const Login = () => {
                 loading: false
             });
             history.replace('/profile');
+            alert('Logged in successfully!')
         } catch(err) {
             setData({ ...data, error: err.message, loading: false });
         }

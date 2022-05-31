@@ -57,6 +57,8 @@ const Register = () => {
                 loading: false
             });
             history.replace('/profile');
+            alert('Registered successfully!')
+
         } catch(err) {
             setData({ ...data, error: err.message, loading: false });
         }
