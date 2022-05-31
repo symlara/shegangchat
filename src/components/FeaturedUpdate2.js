@@ -11,7 +11,7 @@ const style = {
 
 const FeaturedUpdate2 = () => (
     <div className="featured h-72">
-        <div className="absolute rounded-lg bg-center bg-no-repeat bg-cover shadow-md inline-block w-full h-72 opacity-95" style={style}>
+        <div className="absolute rounded-lg bg-center bg-no-repeat bg-cover shadow-md inline-block w-90 h-72 opacity-95" style={style}>
         </div>
         <div className="absolute rounded-lg bg-center bg-gradient-to-b opacity-25 w-full h-72" />
         <div className="flex flex-col rounded-lg p-4 items-center justify-center absolute w-full h-full">
