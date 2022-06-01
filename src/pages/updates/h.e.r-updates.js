@@ -51,6 +51,9 @@ const HERUpdates = () => {
             <div className='app__updates__blog-container_article'>
                 <div className='app__updates__blog-container_article-content'>
                     <a href="#/"><h3>Interviews</h3></a>
+                    <ul>
+                        <a href="https://www.ebony.com/covers/june-cover-her-and-dad-kenny-wilson/" target="_blank" rel="noopener noreferrer"><li className='text-white text-xl'>EBONY Cover Story</li></a>
+                    </ul>
                 </div>
             </div>
            
