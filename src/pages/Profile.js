@@ -5,7 +5,7 @@ import Delete from '../components/svg/Delete';
 import { storage, db, auth } from '../firebase';
 import { ref, getDownloadURL, uploadBytes, deleteObject } from "firebase/storage";
 import {getDoc, doc, updateDoc} from 'firebase/firestore';
-import { useHistory } from 'react-router-dom'
+import { useHistory } from 'react-router-dom';
 
 const Profile = () => {
     const [img, setImg] = useState('');

@@ -27,7 +27,7 @@ const Advise = () => {
           <div className='app__updates__blog-container_groupA'>
             <div className='app__updates__blog-container_article'>
                 <div className='app__updates__blog-container_article-content'>
-                <a href="#/" rel="noopener noreferrer"><h3>Advice</h3></a>
+                <h3>Advice</h3>
                 </div>
             </div>
           </div>
@@ -35,25 +35,25 @@ const Advise = () => {
             <div className='app__updates__blog-container_article'>
                 <div className='app__updates__blog-container_article-content'>
                 
-                    <a href="#/" rel="noopener noreferrer"><h3>Guidance</h3></a>
+                    <h3>Guidance</h3>
                 </div>
             </div>
 
             <div className='app__updates__blog-container_article'>
                 <div className='app__updates__blog-container_article-content'>
-                    <a href="#/"><h3>Resources</h3></a>
+                    <h3>Resources</h3>
                 </div>
             </div>
 
             <div className='app__updates__blog-container_article'>
                 <div className='app__updates__blog-container_article-content'>
-                    <a href="#/"><h3>Internship opportunities</h3></a>
+                    <h3>Internship opportunities</h3>
                 </div>
             </div>
 
             <div className='app__updates__blog-container_article'>
                 <div className='app__updates__blog-container_article-content'>
-                    <a href="#/" rel="noopener noreferrer"><h3>Educational advice</h3></a>
+                    <h3>Educational advice</h3>
                 </div>
             </div>
           </div>

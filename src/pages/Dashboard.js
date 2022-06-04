@@ -24,6 +24,23 @@ const Dashboard = () => {
 
 
   useEffect(() => {
+
+    // const updateChat = async() => {
+    //   const chatRef = ref(
+    //     storage,
+    //   );
+    //   try {
+    //     if(chat.uid) {
+    //       await updateDoc(doc(db, 'chats', auth.currentUser.uid)),
+    //       {
+    //         text: text
+    //       }
+    //     }
+    //   }catch(err) {
+    //     console.log(err.message);
+    //   }
+    // }
+
     const usersRef = collection(db, "users");    // create query object
     const q = query(usersRef, where('uid', 'not-in', [user1]))
     //execute query
@@ -35,6 +52,10 @@ const Dashboard = () => {
       setUsers(users);
     });
     return () => unsub();
+
+    
+
+
   }, []);
   
   const selectUser = async (user) => {

@@ -34,25 +34,29 @@ const Meetups = () => {
                 <div className='app__meetups__blog-container_groupB'>
                     <div className='app__meetups__blog-container_article'>
                         <div className='app__meetups__blog-container_article-content'>
-                            <a href="https://www.her-official.com/#tour" target="_blank" rel="noopener noreferrer"><h3>Tour Meet Ups</h3></a>
+                           <h3>Tour Meet Ups</h3>
+                                <ul>
+                                    <a href="https://www.her-official.com/#tour" target="_blank" rel="noopener noreferrer"><li className='text-white text-xl'>BOMM Tour Schedule</li></a>
+                                    <a href="https://www.coldplay.com/tour/" target="_blank" rel="noopener noreferrer"><li className='text-white text-xl'>World Tour w/ Coldplay</li></a>
+                                </ul>
                         </div>
                     </div>
 
                     <div className='app__meetups__blog-container_article'>
                         <div className='app__meetups__blog-container_article-content'>
-                            <a href="#/"><h3>Traveling</h3></a>
+                            <h3>Traveling</h3>
                         </div>
                     </div>
 
                     <div className='app__meetups__blog-container_article'>
                         <div className='app__meetups__blog-container_article-content'>
-                            <a href="#/"><h3>Adventures</h3></a>
+                            <h3>Adventures</h3>
                         </div>
                     </div>
 
                     <div className='app__meetups__blog-container_article'>
                         <div className='app__meetups__blog-container_article-content'>
-                            <a href="#/"><h3>Connections for professional and networking purposes</h3></a>
+                            <h3>Connections for professional and networking purposes</h3>
                         </div>
                     </div>
 

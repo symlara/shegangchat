@@ -44,28 +44,32 @@ const HERUpdates = () => {
            
             <div className='app__updates__blog-container_article'>
                 <div className='app__updates__blog-container_article-content'>
-                    <a href="#/"><h3>Appearances</h3></a>
+                    <h3>Appearances</h3>
                 </div>
             </div>
           
             <div className='app__updates__blog-container_article'>
                 <div className='app__updates__blog-container_article-content'>
-                    <a href="#/"><h3>Interviews</h3></a>
+                    <h3>Interviews</h3>
                     <ul>
                         <a href="https://www.ebony.com/covers/june-cover-her-and-dad-kenny-wilson/" target="_blank" rel="noopener noreferrer"><li className='text-white text-xl'>EBONY Cover Story</li></a>
+                        <a href="https://www.essence.com/entertainment/exclusive-her-nationwide-campaign/" target="_blank" rel="noopener noreferrer"><li className='text-white text-xl'>Essence</li></a>
                     </ul>
                 </div>
             </div>
            
             <div className='app__updates__blog-container_article'>
                 <div className='app__updates__blog-container_article-content'>
-                    <a href="http://lightsonfest.com/"  target="_blank" rel="noopener noreferrer"><h3>Festivals</h3></a>
+                    <h3>Festivals</h3>
+                    <ul>
+                        <a href="http://lightsonfest.com/"  target="_blank" rel="noopener noreferrer"><li className='text-white text-xl'>Light On Fest</li></a>
+                    </ul>
                 </div>
             </div>
            
             <div className='app__updates__blog-container_article'>
                 <div className='app__updates__blog-container_article-content'>
-                    <a href="#/"  rel="noopener"><h3>Collaborations</h3></a>
+                    <h3>Collaborations</h3>
                     <ul>
                         <a href="https://news.nationwide.com/her-featured-in-new-nationwide-commercial/" target="_blank" rel="noopener noreferrer"><li className='text-white text-xl'>Nationwide</li></a>
                     </ul>
@@ -80,7 +84,11 @@ const HERUpdates = () => {
             
             <div className='app__updates__blog-container_article'>
                 <div className='app__updates__blog-container_article-content'>
-                    <a href="https://www.hollywoodreporter.com/movies/movie-news/h-e-r-to-make-acting-debut-in-the-color-purple-movie-musical-exclusive-1235004336/" target="_blank" rel="noopener noreferrer"><h3>Acting Gigs</h3></a>
+                    <h3>Acting Gigs</h3>
+                        <ul>
+                            <a href="https://www.hollywoodreporter.com/movies/movie-news/h-e-r-to-make-acting-debut-in-the-color-purple-movie-musical-exclusive-1235004336/" target="_blank" rel="noopener noreferrer"><li className='text-white text-xl'>Acting Debut in ‘The Color Purple’</li></a>
+                        </ul>
+                    
                 </div>
             </div>
           </div>
