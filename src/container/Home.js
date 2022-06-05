@@ -2,7 +2,7 @@ import Carousel from 'react-multi-carousel';
 import 'react-multi-carousel/lib/styles.css';
 import FeaturedUpdate2 from '../components/FeaturedUpdate2';
 import FeaturedUpdates from '../components/FeaturedUpdates';
-
+import MasonryLayout from '../components/MasonryLayout';
 
 const responsive = {
     superLargeDesktop: {
@@ -42,13 +42,18 @@ const Home = () => {
       );
 
       return (
-        <div className='mb-8 carousel'>
-        <Carousel infinite customleftarrow={customleftarrow} customrightarrow={customrightarrow} responsive={responsive} itemClass="px-4">
-          <FeaturedUpdates />
-            <div className="text-white">
-              <FeaturedUpdate2 />
-            </div>
-        </Carousel>
+        <div>
+          <div className='mb-8 carousel'>
+            <Carousel infinite customleftarrow={customleftarrow} customrightarrow={customrightarrow} responsive={responsive} itemClass="px-4">
+            <FeaturedUpdates />
+              <div className="text-white">
+                <FeaturedUpdate2 />
+              </div>
+            </Carousel>
+          </div>
+          
+        
+         <MasonryLayout />
       </div>
       )
 

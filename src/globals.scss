@@ -905,6 +905,20 @@ section .form {
 }
 
 /* video page styles */
+
+.container { 
+  position: relative;
+  padding-bottom: 56.25;
+  height: 100%;
+  padding-top: 24px;
+
+
+
+  &hover {
+    cursor: pointer;
+  }
+}
+
 .video-container {
   position: relative;
   padding-bottom: 56.25;

@@ -16,7 +16,7 @@ const FeaturedUpdates = () => (
     <div className="flex flex-col rounded-lg p-4 items-center justify-center absolute w-full h-full">
         <div className="absolute rounded-lg bg-center bg-gradient-to-b opacity-25 w-full h-72" />
             {/* <p className="text-white mb-4 text-shadow font-semibold text-xs">{moment().format('MMM DD, YYYY')}</p> */}
-            <p className="text-white mb-4 text-shadow font-bold text-xl text-center">H.E.R Updates</p>
+            <p className="text-white mb-4 text-shadow font-bold text-xl text-center">H.E.R. Updates</p>
             <div className="flex items-center absolute bottom-5 w-full justify-center">
             </div>
             </div>

@@ -43,7 +43,7 @@ const Header = () => {
               )}
           </div>
       </nav>
-      <p className='text-white text-center description'>A PLACE FOR ALL H.E.R FANS TO FIND ALL THINGS H.E.R., <br />SHE GANG ACTIVITIES, SCHOOL AND CAREER RESOURCES, AND A SENSE OF COMMUNITY.</p>
+      <p className='text-white text-center description'>A PLACE FOR ALL H.E.R. FANS TO FIND ALL THINGS H.E.R., <br />SHE GANG ACTIVITIES, SCHOOL AND CAREER RESOURCES, AND A SENSE OF COMMUNITY.</p>
         <div className='topnav' id="myTopnav">
 
         </div>

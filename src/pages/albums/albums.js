@@ -18,7 +18,7 @@ export default function Album() {
                 <article className="br2 ba mv4 w-100 w-50-m w-25-l mw5 center tc" id="volume-1">
                   <img className='lazyload' alt="HER self-titled album" src={image2}
                    />
-                  <h1 className="text-white font-bold">H.E.R</h1>
+                  <h1 className="text-white font-bold">H.E.R.</h1>
                   <div className="ph1">
                     <ul className="list pl0 ml0 center mw6 ba white text-semibold br2 h-100 tc">
                       <li className="ph3 pv3 bb b--light-silver">Losing </li>

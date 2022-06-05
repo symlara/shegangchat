@@ -22,7 +22,7 @@ const HERUpdates = () => {
     return (
      <div className='app__updates__blog section__padding'>
         <div className='app__updates__blog-heading'>
-          <h2 className='text-white'>H.E.R Updates</h2>
+          <h2 className='text-white'>H.E.R. Updates</h2>
         </div>
         <div className='app__updates__blog-container'>
           <div className='app__updates__blog-container_groupA'>
