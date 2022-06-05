@@ -53,7 +53,7 @@ const Home = () => {
           </div>
           
         
-         <MasonryLayout />
+         {/* <MasonryLayout /> */}
       </div>
       )
 
