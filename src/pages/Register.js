@@ -2,16 +2,16 @@ import React, { useState } from 'react'
 import { createUserWithEmailAndPassword } from "firebase/auth";
 import { auth, db } from '../firebase';
 import { setDoc, doc, Timestamp } from 'firebase/firestore';
-import { GoogleButton } from 'react-google-button';
+// import { GoogleButton } from 'react-google-button';
 
 
 import { useHistory } from 'react-router-dom';
 
-import { useSignInWithGoogle } from "react-firebase-hooks/auth";
+// import { useSignInWithGoogle } from "react-firebase-hooks/auth";
 
 
 const Register = () => {
-    const [signInWithGoogle] = useSignInWithGoogle(auth);
+    // const [signInWithGoogle] = useSignInWithGoogle(auth);
 
     const [data, setData ] = useState({
         name: '',

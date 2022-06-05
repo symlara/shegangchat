@@ -54,7 +54,7 @@ export default function AuthContextProvider({children}) {
 
   function signInWithGoogle()  {
     const provider = new GoogleAuthProvider()
-    return signInWithPopup(auth, provider)
+    return signInWithRedirect(auth, provider)
     
 }
 

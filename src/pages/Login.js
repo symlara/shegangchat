@@ -3,17 +3,16 @@ import { signInWithEmailAndPassword } from "firebase/auth";
 import { auth, db } from '../firebase';
 import { doc, updateDoc } from 'firebase/firestore';
 // import { FaGoogle } from 'react-icons/fa';
+// import GoogleLogin from 'react-google-login';
+import { FcGoogle } from 'react-icons/fc';
 
-// import { GoogleButton } from 'react-google-button';
-
-
-// import { useSignInWithGoogle } from "react-firebase-hooks/auth";
+import { useSignInWithGoogle } from "react-firebase-hooks/auth";
 
 import { useHistory } from 'react-router-dom';
 
 
 const Login = () => {
-    // const [signInWithGoogle] = useSignInWithGoogle(auth);
+    const [signInWithGoogle] = useSignInWithGoogle(auth);
 
    
     
@@ -88,16 +87,17 @@ const Login = () => {
             </div>
           
             <hr/>
-            {/* <p className='text-white text-center'>OR</p> */}
+            <p className='text-white text-center'>OR</p>
+          <button
+            type="button"
+            onClick={() => signInWithGoogle('').then(() => {
+                history.push('/profile')
+            })}
+            className='text-white btn'
+          >
+              <FcGoogle className='mr-5' /> Sign in with Google
+          </button>
            
-               
-            {/* <div 
-            className='btn text-white' 
-           ><GoogleButton  
-           className="google-button"
-           onClick={() => signInWithGoogle("", {prompt: "select_account"}).then(() =>{
-            history.push('/profile')})} />
-            </div> */}
         </form>
     </section>
   )
