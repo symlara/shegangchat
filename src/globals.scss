@@ -250,7 +250,7 @@ section .form {
 }
 
 .btn_container {
-  margin: 10px 40px;
+  margin: 10px 0px;
   text-align: center;
  
 }
@@ -286,6 +286,21 @@ section .form {
 //   // display: flex;
 //   // align-items: center;
 // }
+
+.google-button {
+  border-radius: 8px !important;
+  margin-left: 55px !important;
+  margin-top: 10px;
+  background-color: var(--color-bg) !important;
+  color: var(--secondary-color) !important;
+  box-shadow: none !important;
+
+  &:hover{
+    color: var(--gray-color);
+    outline: none;
+  }
+  
+}
 
 .profile_container {
   display: flex;

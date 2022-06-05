@@ -7,7 +7,7 @@ import { setDoc, doc, Timestamp } from 'firebase/firestore';
 
 import { useHistory } from 'react-router-dom';
 
-// import { useSignInWithGoogle } from "react-firebase-hooks/auth";
+import { useSignInWithGoogle } from "react-firebase-hooks/auth";
 
 
 const Register = () => {
@@ -89,14 +89,16 @@ const Register = () => {
                 disabled={loading}>{loading ? 'Creating ...' : 'Register'}
                 </button>
             </div>
+            
             <hr />
-            {/* <p className='text-white text-center'>OR</p> */}
-            {/* <div>
+            {/* <p className='text-white text-center'>OR</p>
                 <GoogleButton 
-                onClick={() => 
-                signInWithGoogle("", {prompt: "select_account"}).then(() =>{
-                history.push('/profile')})} />
-            </div> */}
+                    className='google-button'
+                    type="light"  
+                    onClick={() => signInWithGoogle('').then(() => {
+                        history.push('/profile')
+                    })}  
+                /> */}
         </form>
     </section>
   )
